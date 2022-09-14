@@ -29,7 +29,7 @@ public class Lab2 {
             B[i] = row;
         }
 
-        System.out.println("Matrix B:");
+        System.out.println("Generated matrix B:");
         printMatrix(B);
         System.out.println();
 
