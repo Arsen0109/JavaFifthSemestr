@@ -1,6 +1,7 @@
 package lab4java;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class Lab4 {
     public static void main(String[] args) {
@@ -9,18 +10,17 @@ public class Lab4 {
         Student bodya = new Student("Bodya", "Malesyk", 20, 3, 10);
         Student stas = new Student("Stas", "Yanchuk", 17, 1, 29);
         Student[] students = {arsen, oksana, bodya, stas};
-        Arrays.sort(students, new byAge());
+        Arrays.sort(students, Comparator.comparingInt(a -> a.age));
         System.out.println("Sorting by age:");
         for (Student student : students){
             System.out.printf("%s %s %d %d %d%n", student.name, student.surname, student.age, student.yearOfStudying, student.numberInGroupList);
         }
         System.out.println();
 
-        Arrays.sort(students, new byNumberInGroup());
+        Arrays.sort(students, (a, b) -> b.numberInGroupList - a.numberInGroupList);
         System.out.println("Sorting by student number in group in reverse order:");
         for (Student student : students){
             System.out.printf("%s %s %d %d %d%n", student.name, student.surname, student.age, student.yearOfStudying, student.numberInGroupList);
         }
-        System.out.println();
     }
 }
