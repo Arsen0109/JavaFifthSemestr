@@ -22,7 +22,7 @@ public class Lab1 {
                     S += (i + j)/((double)i/C);
                 }
             }
-            System.out.println("S = " + String.valueOf(S));
+            System.out.println("S = " + S);
 
         }else {System.out.println("Error division to 0");}
 

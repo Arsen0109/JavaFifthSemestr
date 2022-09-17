@@ -13,12 +13,4 @@ public class Student {
         yearOfStudying = y;
         numberInGroupList = num;
     }
-
-    public int getAge() {
-        return age;
-    }
-
-    public int getNumberInGroupList(){
-        return numberInGroupList;
-    }
 }

@@ -53,7 +53,7 @@ public class Lab2 {
                 count++;
             }
             index++;
-            System.out.println("Average value of column " + String.valueOf(index) + " equals " + String.valueOf((double) sum/count));
+            System.out.println("Average value of column " + index + " equals " + (double) sum/count);
         }
     }
 
