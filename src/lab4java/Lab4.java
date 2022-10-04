@@ -11,17 +11,17 @@ public class Lab4 {
         Student stas = new Student("Stas", "Yanchuk", 17, 1, 29);
         Student[] students = {arsen, oksana, bodya, stas};
 
-        Arrays.sort(students, Comparator.comparingInt(a -> a.age));
+        Arrays.sort(students, Comparator.comparingInt(Student::getAge));
         System.out.println("Sorting by age:");
         for (Student student : students){
-            System.out.printf("%s %s %d %d %d%n", student.name, student.surname, student.age, student.yearOfStudying, student.numberInGroupList);
+            System.out.printf("%s %s %d %d %d%n", student.getName(), student.getSurname(), student.getAge(), student.getYearOfStudying(), student.getNumberInGroupList());
         }
         System.out.println();
 
-        Arrays.sort(students, (a, b) -> b.numberInGroupList - a.numberInGroupList);
+        Arrays.sort(students, (a, b) -> b.getNumberInGroupList() - a.getNumberInGroupList());
         System.out.println("Sorting by student number in group in reverse order:");
         for (Student student : students){
-            System.out.printf("%s %s %d %d %d%n", student.name, student.surname, student.age, student.yearOfStudying, student.numberInGroupList);
+            System.out.printf("%s %s %d %d %d%n", student.getName(), student.getSurname(), student.getAge(), student.getYearOfStudying(), student.getNumberInGroupList());
         }
     }
 }

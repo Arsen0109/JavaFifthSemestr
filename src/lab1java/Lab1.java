@@ -7,8 +7,6 @@ import java.util.Scanner;
 
 public class Lab1 {
 
-
-
     public static void main(String[] args) {
         double S = 0;
         int C = 416 % 3;
