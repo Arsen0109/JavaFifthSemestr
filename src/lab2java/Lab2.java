@@ -3,6 +3,8 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 /*
+* ІО-04 Нерода Арсен
+* Залікова книжка: №ІО-416
 * Дія з матрицями: C=Bт
 * Тип елементів матриці: int
 * Дія з матрицею С: Знайти середнє значення елементів кожного стовпчика матриця
@@ -54,13 +56,11 @@ public class Lab2 {
                 int index = 0;
                 for (int[] row : B) {
                     int sum = 0;
-                    int count = 0;
                     for (int col : row) {
                         sum += col;
-                        count++;
                     }
                     index++;
-                    System.out.println("Average value of column " + index + " equals " + (double) sum / count);
+                    System.out.println("Average value of column " + index + " equals " + (double) sum / row.length);
                 }
             } catch (Exception e) {
                 System.out.println("Your input is not Integer");
