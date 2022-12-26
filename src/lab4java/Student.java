@@ -53,4 +53,15 @@ public class Student {
     public void setNumberInGroupList(int numberInGroupList) {
         this.numberInGroupList = numberInGroupList;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", age=" + age +
+                ", yearOfStudying=" + yearOfStudying +
+                ", numberInGroupList=" + numberInGroupList +
+                '}';
+    }
 }
