@@ -68,4 +68,13 @@ public class Flower {
         nameOfFlower = "Hrizantema";
     }
 
+    @Override
+    public String toString() {
+        return "Flower{" +
+                "nameOfFlower='" + nameOfFlower + '\'' +
+                ", freshness=" + freshness +
+                ", price=" + price + "UAH" +
+                ", length=" + length + "cm" +
+                '}';
+    }
 }

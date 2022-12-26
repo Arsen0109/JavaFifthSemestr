@@ -7,7 +7,7 @@ import java.util.Comparator;
 public class Bouquet {
 
     public static void printFlowerParametrs(Flower f){
-        System.out.println("Flower \"" + f.getNameOfFlower() + "\" cost " + f.getPrice() + " UAH" + ", length is " + f.getLength() + " cm" + ",freshness is " + f.getFreshness() + " days.");
+        System.out.println(f.toString());
     }
 
     public static void outputArray(Flower[] bouquet){
@@ -39,9 +39,8 @@ public class Bouquet {
     }
 
     public static void main(String[] args) {
-        final int count = 7;
 
-        Flower[] bouquet = new Flower[count];
+        Flower[] bouquet = new Flower[7];
         bouquet[0] = new Rose(3,50.5,80);
         bouquet[1] = new Rose(4,49.6,80);
         bouquet[2] = new Rose(3,48.0,80);
